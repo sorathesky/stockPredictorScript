@@ -17,9 +17,9 @@ def get_data(filename):
 
 def predict_prices(dates, prices, x):
     dates = np.reshape(dates,(len(dates), 1))
-    svr_lin = SVR(kernel= 'linear', C=1e3, gamma = 'auto')
-    svr_poly = SVR(kernel='poly', C=1e3, degree = 2, gamma = 'auto')
-    svr_rbf = SVR(kernel='rbf', C=1e3, gamma = 'auto')
+    svr_lin = SVR(kernel= 'linear', C=1e3, gamma = 'scale')
+    svr_poly = SVR(kernel='poly', C=1e3, degree = 2, gamma = 'scale')
+    svr_rbf = SVR(kernel='rbf', C=1e3, gamma = 'scale')
     
     
     svr_lin.fit(dates, prices)
