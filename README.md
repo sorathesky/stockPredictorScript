@@ -2,7 +2,7 @@
 Simple prediction script being applied to apple stock
 
 # DEPENDENCIES 
-
+<p>Python 3</p>
 <p>csv</p>
 <p>pip install numpy</p>
 <p>pip install scikit-learn</p>
